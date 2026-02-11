@@ -1,0 +1,6 @@
+# 项目依赖包
+PyQt5==5.15.10
+pyinstaller==6.0.0
+# 可选依赖
+pandas==2.0.3  # 用于Excel文件处理
+openpyxl==3.1.2  # 用于Excel文件读写
