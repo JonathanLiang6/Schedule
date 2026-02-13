@@ -72,8 +72,10 @@ def init_database(db_path='schedule.db'):
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS memos (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        content TEXT,
+        content TEXT NOT NULL,
+        date TEXT NOT NULL,
         font_size INTEGER DEFAULT 12,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )''')
     
